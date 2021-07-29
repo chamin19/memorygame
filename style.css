@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  background: #d6d2f6;
+  margin: 0px;
+  padding: 30px 30px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #564e9e;
+  font-size: 40px;
+  font-family: 'Nunito', sans-serif;
+  line-height: 2;
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+h2 {
+  color: grey;
+  font-size: 25px;
+  font-family: 'Nunito', sans-serif;
+  line-height: 2;
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+h3 {
+  color: grey;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  line-height: 2;
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+
+p {
+  color: grey;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  font-weight: 200;
+  text-align: center;
+}
+
+.reset, .play-again {
+  display: inline-block;
+  background-color: #403c64;
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+}
+
+.stats div {
+  display: inline-block;
+  padding: 3px;
+  font-weight: 500;
+  font-size: 23px;
+  margin-left: 50px;
+  margin-right: 50px;
+  bottom: 20px;
+}
+
+.deck {
+  width: 660px;
+  height: 660px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #403c64;
+  padding: 5px;
+  perspective: 1000px;
+}
+
+.card {
+  height: 150px;
+  width: 150px;
+  margin: 5px 5px;
+  position: relative;
+  background-color: black;
+  border: white 2px solid;
+  border-radius: 10px;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+  cursor: pointer;
+  backface-visibility: hidden;  
+}
+.card:active {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  border-radius: 10px;
+  font-size: 53px;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.back {
+  background-color: black;
+  color: white;
+}
+
+.congrats {
+  display: none;
+  background-color: white;
+  width: 430px;
+  height: 510px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -215px;
+  margin-top: -255px;
+  
+}
+
+.finishStats div {
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
+  border-radius: 3px;
+  border-color: white;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.top {
+  text-align: right; 
+  width: 90%;
+  cursor: pointer;
+  display: inline-block;
+}
