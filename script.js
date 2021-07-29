@@ -21,7 +21,8 @@ shuffle();
 
 //@description Flip a card
 function flip(){
-  //return if two cards have been flipped
+  //return if two cards have been flipped or card has already been flipped
+  if (this === firstCard) return;
   if (secondCardFlipped) return;
   this.classList.toggle('flip'); 
   //startTimer after player makes first move
