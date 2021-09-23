@@ -14,6 +14,7 @@ let sec = document.getElementById('seconds');
 let tsec = 0;
 let timer;
 
+popup.style.display = "block";
 
 cards.forEach(card => card.addEventListener('click',flip));
 //shuffle page upon reload
