@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,17 +21,20 @@
   </section>
 
 <!-- Display above deck -->
-  <div class="reset">Reset</div>
-  <br>
-  <br>
   <div class="stats">
-    <div> Moves: <span class="num-moves">0</span> </div>
-    <div class="timer"> Time elapsed: 
-      <label id="minutes">00</label> :
-      <label id="seconds">00</label>
-    </div>
+      <div class="moves">  
+        <strong>Moves: 
+          <span class="num-moves">0</span>
+        </strong>
+      </div>
+      <div class="timer"> 
+        <strong>Time: 
+          <label id="minutes">00</label> :
+          <label id="seconds">00</label>  
+        </strong>
+      </div>
+    <div class="reset">Reset</div>
   </div>
-
 
 <!-- Deck of 6 distinct cards -->
   <div class="deck">
@@ -124,7 +128,7 @@
       <i id = "close" class="bi bi-x-circle"></i>
       <h1>Woohoo!</h1>
     </div>
-    <h1 id="ribbon"><img src="https://img.icons8.com/bubbles/200/000000/trophy.png"></h1>
+    <h1 id="ribbon"><img src="https://img.icons8.com/bubbles/200/000000/trophy.png" class="ribbon"></h1>
     <div class="finishStats">
       <div> Your time: <span class="totalTime">00:00</span> </div>
       <div> Moves: <span class="totalMoves">0</span> </div>
