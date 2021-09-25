@@ -18,6 +18,7 @@ cards.forEach(card => card.addEventListener('click',flip));
 //shuffle page upon reload
 shuffle();
 
+
 //@description Flip a card
 function flip(){
   //return if two cards have been flipped

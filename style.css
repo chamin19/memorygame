@@ -99,17 +99,18 @@ p {
   transition: transform 0.2s;
   -webkit-transition: -webkit-transform 0.2s;
   cursor: pointer;
-  backface-visibility: hidden;  
+  backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden; 
 }
 .card:active {
   transform: scale(1.1);
-  transition: transform 0.2s;
   -webkit-transform: scale(1.1);
+  transition: transform 0.2s;
   -webkit-transition: -webkit-transform 0.2s;
 }
 .card.flip {
   transform: rotateY(180deg);
-  -webkit-transform: -rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .front, .back {
@@ -121,6 +122,7 @@ p {
   align-items: center;
   border-radius: 10px;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .front {
