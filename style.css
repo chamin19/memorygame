@@ -95,7 +95,7 @@ p {
   transform: scale(1);
   -webkit-transform: scale(1);
   transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
+  -webkit-transform-style: -webkit-preserve-3d;
   transition: transform 0.2s;
   -webkit-transition: -webkit-transform 0.2s;
   cursor: pointer;
@@ -109,7 +109,7 @@ p {
 }
 .card.flip {
   transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
+  -webkit-transform: -rotateY(180deg);
 }
 
 .front, .back {
