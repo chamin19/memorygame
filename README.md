@@ -6,4 +6,4 @@ A simple memory game with a deck of 16 cards.
 Pair all of the cards in the deck in as few moves and as little time as possible. 
 
 ## Instructions
-On a desktop, laptop, or an Android device, visit https://a-memorygame.netlify.app/.
+Visit https://a-memorygame.netlify.app/ on a mobile device or laptop. 
